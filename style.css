@@ -1,0 +1,105 @@
+.hero {
+  background: url('bg1.jpg') no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  float: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #222;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+.info {
+  opacity: 0.85;
+  position: relative;
+  top: 25px;
+  left: 40px;
+}
+
+.info h1 {
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0;
+  line-height: 80px;
+}
+
+.icons {
+  margin-left: 90px;
+}
+
+.icons a img {
+  margin: 0 7px;
+}
+
+.icons a:hover, .link:hover {
+  opacity:0.75;
+}
+
+.links {
+  margin: 10px -5px;
+}
+
+.block {
+  display: inline-block;
+}
+
+.link {
+  display: inline-block;
+  color: #EEE;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding:10px;
+  cursor: pointer;
+}
+
+.panel {
+  position: relative;
+  font-size: 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 450px;
+}
+
+.panel a {
+  text-decoration: none;
+  color: #EEE;
+}
+
+.panel a:hover {
+  opacity:0.75;
+}
+
+.linebreak {
+  position: relative;
+  top: -5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background: url('bg1-tab.jpg');
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .hero {
+    background: url('bg1-mob.jpg');
+  }
+  .panel {
+    width: 75%;
+  }
+  .icons {
+    margin-left: 0;
+  }
+}
