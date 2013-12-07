@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   opacity: 0.5;
-  background-position: top right;
+  background-position: -479px 0;
 }
 
 body {
@@ -23,11 +23,8 @@ body {
 }
 
 .info {
-  margin: 0;
+  margin: 25px 0 0 40px;
   opacity: 0.85;
-  position: relative;
-  top: 25px;
-  left: 40px;
 }
 
 .info h1 {
