@@ -2,8 +2,6 @@
   background: url('bg1.jpg') no-repeat;
   background-size: cover;
   min-width: 100%;
-  min-height: 100%;
-  float: right;
   position: fixed;
   margin: 0;
   top: 0;
