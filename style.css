@@ -1,27 +1,26 @@
 .hero {
-  background: url('bg1.jpg') no-repeat;
-  background-size: cover;
-  min-width: 100%;
+  float: right;
   position: fixed;
-  margin: 0;
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0.5;
+  background-position: top right;
 }
 
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: #222;
+  background-color: #060606;
   color: white;
   font-family: Helvetica, sans-serif;
 }
 
 .info {
-  margin: 25px 0 0 40px;
   opacity: 0.85;
+  position: relative;
+  top: 25px;
+  left: 40px;
 }
 
 .info h1 {
@@ -44,7 +43,7 @@ body {
 }
 
 .links {
-  margin: 10px 0 10px -5px;
+  margin: 10px -5px;
 }
 
 .block {
@@ -83,10 +82,21 @@ body {
   top: -5px;
 }
 
+@media only screen and (max-width: 480px) {
+  .hero {
+    background: url('bg1-mob.jpg') no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
 
 @media only screen and (min-width: 481px) {
   .hero {
-    background-position: right top;
+    background: url('bg1.jpg') no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
   }
   .panel {
     width: 450px;
