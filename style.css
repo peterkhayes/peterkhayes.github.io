@@ -5,11 +5,12 @@
   min-height: 100%;
   float: right;
   position: fixed;
+  margin: 0;
   top: 0;
   left: 0;
   right: 0;
   opacity: 0.5;
-  background-position: -479px 0;
+  background-position: top right;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 }
 
 .info {
+  margin: 0;
   opacity: 0.85;
   position: relative;
   top: 25px;
