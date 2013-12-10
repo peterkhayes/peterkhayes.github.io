@@ -88,6 +88,7 @@ body {
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
+    opacity: 0.4;
   }
 }
 
@@ -97,6 +98,7 @@ body {
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
+    opacity: 0.8;
   }
   .panel {
     width: 450px;
