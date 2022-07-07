@@ -1,0 +1,75 @@
+body {
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 16px 8px;
+  background-image: url('https://code.divshot.com/geo-bootstrap/img/stars.gif');
+  font-size: 24px;
+  font-family: 'comic sans ms';
+}
+
+#title {
+  color: yellow;
+  font-family: 'comic sans ms';
+  text-align: center;
+  font-size: 60px;
+  margin: 24px 0 36px;
+  font-weight: bold;
+}
+
+#main {
+  display: flex;
+  gap: 24px;
+}
+
+#left, #right {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  gap: 24px;
+}
+
+#left {
+  flex-grow: 3;
+}
+
+#right {
+  flex-grow: 2;
+  min-width: 350px;
+}
+
+.panel .header {
+  font-size: 36px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border: 3px solid white;
+  
+}
+
+#info {
+  background-color: rgba(255, 175, 250, 0.8);
+  color: blue;
+}
+
+#schedule {
+  background-color: rgba(175, 255, 250, 0.8);
+  color: darkred;
+}
+
+#vibe {
+  font-size: 20px;
+  background-color: rgba(175, 255, 180, 0.8);
+  color: rgb(170, 112, 53);
+}
+
+/* h2 {
+  margin-top: 32px;
+}
+
+h3 {
+  margin-top: 16px;
+} */

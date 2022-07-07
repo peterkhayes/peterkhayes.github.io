@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Andrea and Peter's Commitment Ceremony Weekend Hangout</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Andrea and Peter's Commitment Ceremony Weekend Hangout</h1>
+
+    <div id="main">
+      <div id="left">
+        <section id="info" class="panel">
+          <div>
+            <h2 class="header">Time</h2>
+            <p>September 9-11th</p>
+          </div>
+          <div>
+            <h2 class="header">Location</h2>
+            <p>Hacienda House<br />505 Corral de Tierra Rd<br />Salinas, CA</p>
+          </div>
+          <div>
+            <h2 class="header">RSVP Form</h2>
+            <a class="rainbow" target="_blank" href="#"
+              >✨✨✨CLICK HERE✨✨✨</a
+            >
+          </div>
+        </section>
+        <section id="vibe" class="panel">
+          <h2 class="header">Vibes</h2>
+          <p>
+            What we want most for our commitment ceremony is to spend a cozy
+            weekend hanging out with our closest friends!
+          </p>
+          <p>
+            We have a huge winery estate with three houses, a pool and hot tub,
+            lawn games, and other fun activies we've planned for everyone.
+          </p>
+          <p>
+            Friday night and Saturday brunch are catered, with a potluck style
+            dinner on Saturday night and plenty of extras around for lunch and
+            snacks!
+          </p>
+        </section>
+      </div>
+      <div id="right">
+        <section id="schedule" class="panel">
+          <h2 class="header">Schedule</h2>
+          <div>
+            <h3>Friday the 9th</h3>
+            <ul>
+              <li><strong>1:00:&nbsp;</strong>Check-in</li>
+              <li><strong>4:30:&nbsp;</strong>Ceremony</li>
+              <li><strong>5:00:&nbsp;</strong>Cocktail Hour</li>
+              <li><strong>6:00:&nbsp;</strong>Catered Dinner</li>
+              <li><strong>7:30:&nbsp;</strong>Party</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Saturday the 10th</h3>
+            <ul>
+              <li><strong>10:00:&nbsp;</strong>Brunch</li>
+              <li><strong>1:00:&nbsp;</strong>Fun Activity</li>
+              <li><strong>6:00:&nbsp;</strong>Potluck Dinner</li>
+              <li><strong>7:30:&nbsp;</strong>Party</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Sunday the 11th</h3>
+            <ul>
+              <li><strong>11:00:&nbsp;</strong>Check-out</li>
+              <li><strong>12:00:&nbsp;</strong>Monterey Bay Aquarium Visit</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+
+      function randomColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      function changeColors() {
+        const elements = document.querySelectorAll(".rainbow");
+        elements.forEach((element) => {
+          const currentColor = element.style.color;
+          let nextColor;
+          do {
+            nextColor = randomColor();
+          } while (nextColor == currentColor);
+
+          element.style.color = nextColor;
+        });
+      }
+
+      changeColors();
+      setInterval(changeColors, 300);
+    </script>
+  </body>
+</html>
