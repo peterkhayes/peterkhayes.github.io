@@ -46,8 +46,7 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-  border: 3px solid white;
-  
+  border: 3px solid white; 
 }
 
 #info {
@@ -66,10 +65,29 @@ body {
   color: rgb(170, 112, 53);
 }
 
-/* h2 {
-  margin-top: 32px;
-}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
 
-h3 {
-  margin-top: 16px;
-} */
+  #title {
+    font-size: 32px;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #left {
+    flex-grow: 0;
+  }
+
+  #right {
+    flex-grow: 0;
+    min-width: 0;
+  }
+
+  .panel .header {
+    font-size: 26px;
+  }
+}
